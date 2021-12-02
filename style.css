@@ -29,8 +29,8 @@ main{
 }
 
 main>form{
-    width: 40vw;
-    height: 74vh;
+    width: 39vw;
+    height: 73vh;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: -0.001rem -0.001rem 0.4rem #000;
@@ -54,8 +54,8 @@ div{
 /* Estilização da Imagem Sanji e h1 */
 div>figure{
     background-image: url(./img/sanji.jpeg);
-    width: 11%;
-    height: 51%;
+    width: 10%;
+    height: 48%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +72,6 @@ div>h1{
 /* Estilização dos Labels e Inputs */
 form>label{
     width: 13%;
-    text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     font-weight: bold;
@@ -85,7 +84,6 @@ form>label{
 form>input{
     width: 60%;
     height: 18%;
-    text-align: left;
     font-size: 0.9rem;
     border-radius: 0.8rem;
     margin-bottom: 1.7rem;
