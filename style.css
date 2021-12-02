@@ -29,8 +29,8 @@ main{
 }
 
 main>form{
-    width: 39vw;
-    height: 73vh;
+    width: 40vw;
+    height: 74vh;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: -0.001rem -0.001rem 0.4rem #000;
@@ -54,13 +54,14 @@ div{
 /* Estilização da Imagem Sanji e h1 */
 div>figure{
     background-image: url(./img/sanji.jpeg);
-    width: 10%;
-    height: 48%;
+    width: 9%;
+    height: 55%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 div>h1{
@@ -70,24 +71,31 @@ div>h1{
 }
 
 /* Estilização dos Labels e Inputs */
-form>label{
-    width: 13%;
+
+#campos{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    width: 26%;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     font-weight: bold;
     color: #376274;
-    margin-left: -16rem;
     margin-bottom: 0.3rem;
-    margin-top: -0.4rem;
 }
 
-form>input{
-    width: 60%;
+input{
+    width: 26%;
     height: 18%;
     font-size: 0.9rem;
     border-radius: 0.8rem;
-    margin-bottom: 1.7rem;
-    margin-left: 1rem;
+    margin-bottom: 1.2rem;
     border-color: #c7c7c7;
     border-style: solid;
     color: #c7c7c7;
@@ -106,9 +114,26 @@ input:hover{
     color: #000000;
 }
 
+/* Complemento */
+
+h2{
+    margin-left: 15rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+h2:hover{
+    color: var(--colorPrimaryButton);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.1s;
+}
+
+
 /* Botão */
 button{
-    width: 30%;
+    width: 33%;
     height: 12%;
     padding: 1rem;
     background-color: var(--colorPrimaryButton);
@@ -117,8 +142,8 @@ button{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: var(--textButton);
-    margin-bottom: 2rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 button:hover{
