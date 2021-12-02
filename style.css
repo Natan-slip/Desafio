@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --colorPrimaryButton: #4671ff;
+    --textButton: #ece8e1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.466)), url(./img/sanjiZoro.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 48%;
+    
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div{
+    width: 41%;
+    height: 75%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+}
+
+form{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form>figure{
+    background-image: url(./img/sanji.jpeg);
+    width: 11vw;
+    height: 22vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+}
+
+form>h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #376274;
+    margin-bottom: 2rem;
+}
+
+form>label{
+    width: 13vw;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #376274;
+    margin-left: -10rem;
+    margin-bottom: 0.4rem;
+}
+
+form>input{
+    width: 27vw;
+    height: 5vh;
+    text-align: left;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
