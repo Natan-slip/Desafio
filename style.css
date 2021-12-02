@@ -15,13 +15,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 48%;
-    
     height: 100vh;
 }
 
 main{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -29,17 +28,22 @@ main{
     justify-content: center;
 }
 
-main>div{
-    width: 41%;
-    height: 75%;
+main>form{
+    width: 40vw;
+    height: 74vh;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: -0.001rem -0.001rem 0.4rem #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-form{
-    width: auto;
-    height: auto;
+div{
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -48,44 +52,44 @@ form{
 }
 
 /* Estilização da Imagem Sanji e h1 */
-form>figure{
+div>figure{
     background-image: url(./img/sanji.jpeg);
-    width: 11vw;
-    height: 22vh;
+    width: 11%;
+    height: 51%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5rem;
     margin-bottom: 2rem;
-    margin-top: 2.5rem;
 }
 
-form>h1{
+div>h1{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: #376274;
-    margin-bottom: 2rem;
 }
 
 /* Estilização dos Labels e Inputs */
 form>label{
-    width: 13vw;
+    width: 13%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #376274;
-    margin-left: -10rem;
+    margin-left: -16rem;
     margin-bottom: 0.3rem;
+    margin-top: -0.4rem;
 }
 
 form>input{
-    width: 27vw;
-    height: 6.1vh;
+    width: 60%;
+    height: 18%;
     text-align: left;
     font-size: 0.9rem;
     border-radius: 0.8rem;
     margin-bottom: 1.7rem;
-    margin-left: 2.3rem;
+    margin-left: 1rem;
     border-color: #c7c7c7;
     border-style: solid;
     color: #c7c7c7;
@@ -106,8 +110,8 @@ input:hover{
 
 /* Botão */
 button{
-    width: 31%;
-    height: 25%;
+    width: 30%;
+    height: 12%;
     padding: 1rem;
     background-color: var(--colorPrimaryButton);
     border-radius: 0.8rem;
@@ -115,6 +119,8 @@ button{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: var(--textButton);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 button:hover{
