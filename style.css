@@ -34,6 +34,7 @@ main>div{
     height: 75%;
     background-color: #ffffff;
     border-radius: 2rem;
+    box-shadow: -0.001rem -0.001rem 0.4rem #000;
 }
 
 form{
@@ -46,6 +47,7 @@ form{
     justify-content: center;
 }
 
+/* Estilização da Imagem Sanji e h1 */
 form>figure{
     background-image: url(./img/sanji.jpeg);
     width: 11vw;
@@ -65,6 +67,7 @@ form>h1{
     margin-bottom: 2rem;
 }
 
+/* Estilização dos Labels e Inputs */
 form>label{
     width: 13vw;
     text-align: left;
@@ -72,14 +75,50 @@ form>label{
     font-weight: bold;
     color: #376274;
     margin-left: -10rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
 }
 
 form>input{
     width: 27vw;
-    height: 5vh;
+    height: 6.1vh;
     text-align: left;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.7rem;
+    margin-left: 2.3rem;
+    border-color: #c7c7c7;
+    border-style: solid;
+    color: #c7c7c7;
+    padding-left: 1rem;
+}
+
+/* Vi que Atualmente não é possivel trocar o estilo da senha em um <input type="password" />
+Mas usando <input type="text" style="-webkit-text-security" e Estilizando muda, mas só em alguns navegadores como Chrome e Safari/>*/
+
+input:focus{
+    outline: none;
+}
+
+input:hover{
+    background-color: whitesmoke;
+    color: #000000;
+}
+
+/* Botão */
+button{
+    width: 31%;
+    height: 25%;
+    padding: 1rem;
+    background-color: var(--colorPrimaryButton);
+    border-radius: 0.8rem;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--textButton);
+}
+
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+    transition: 0.2s;
 }
