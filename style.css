@@ -10,7 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.466)), url(./img/sanjiZoro.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body{
     height: 100vh;
 }
 
-main{
+main {
     width: 100vw;
     height: 100vh;
 
@@ -28,7 +28,7 @@ main{
     justify-content: center;
 }
 
-main>form{
+main>form {
     width: 40vw;
     height: 74vh;
     background-color: #ffffff;
@@ -41,7 +41,7 @@ main>form{
     justify-content: center;
 }
 
-div{
+div {
     width: 100vw;
     height: 100vh;
 
@@ -52,10 +52,10 @@ div{
 }
 
 /* Estilização da Imagem Sanji e h1 */
-div>figure{
+div>figure {
     background-image: url(./img/sanji.jpeg);
-    width: 9%;
-    height: 55%;
+    width: 11vw;
+    height: 17vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +64,7 @@ div>figure{
     margin-top: 2rem;
 }
 
-div>h1{
+div>h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: #376274;
@@ -72,7 +72,7 @@ div>h1{
 
 /* Estilização dos Labels e Inputs */
 
-#campos{
+#campos {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -81,7 +81,7 @@ div>h1{
     justify-content: center;
 }
 
-label{
+label {
     width: 26%;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
@@ -90,7 +90,7 @@ label{
     margin-bottom: 0.3rem;
 }
 
-input{
+input {
     width: 26%;
     height: 18%;
     font-size: 0.9rem;
@@ -105,25 +105,24 @@ input{
 /* Vi que Atualmente não é possivel trocar o estilo da senha em um <input type="password" />
 Mas usando <input type="text" style="-webkit-text-security" e Estilizando muda, mas só em alguns navegadores como Chrome e Safari/>*/
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-input:hover{
+input:hover {
     background-color: whitesmoke;
     color: #000000;
 }
 
 /* Complemento */
 
-h2{
+h2 {
     margin-left: 15rem;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
-    padding: 0.2rem;
 }
 
-h2:hover{
+h2:hover {
     color: var(--colorPrimaryButton);
     cursor: pointer;
     font-size: 1rem;
@@ -132,7 +131,7 @@ h2:hover{
 
 
 /* Botão */
-button{
+button {
     width: 33%;
     height: 12%;
     padding: 1rem;
@@ -146,8 +145,38 @@ button{
     margin-bottom: 2rem;
 }
 
-button:hover{
+button:hover {
     background-color: blue;
     cursor: pointer;
     transition: 0.2s;
+}
+
+@media (max-width: 620px) {
+    form {
+        width: 90vw !important;
+    }
+
+    figure {
+        width: 30% !important;
+    }
+
+    #campos {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2, h3{
+        display: none !important;
+    }
+
+    label{
+        width: 70% !important;
+    }
+
+    input{
+        width: 70% !important;
+    }
 }
